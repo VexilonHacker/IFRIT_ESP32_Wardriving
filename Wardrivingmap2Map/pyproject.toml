@@ -1,0 +1,10 @@
+[project]
+name = "wardrving-data-visualizer-final-product-uv"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "folium>=0.20.0",
+    "pandas>=2.3.1",
+]
