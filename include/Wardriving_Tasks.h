@@ -8,11 +8,11 @@ void BLINK_LED(void *parameter){
     while (1) {
         if (Enable_Led_Blink){
             for (int i = 0; i <= 255; i = i+5) {
-                ledcWrite(LED_CHANNEL, i);
+                ledcWrite(LED_PIN, i);
                 vTaskDelay(LED_DELAY/ portTICK_PERIOD_MS);
             }
             for (int i = 255; i >= 0; i = i-5) {
-                ledcWrite(LED_CHANNEL, i);
+                ledcWrite(LED_PIN, i);
                 vTaskDelay(LED_DELAY/ portTICK_PERIOD_MS);
             }
         }else{

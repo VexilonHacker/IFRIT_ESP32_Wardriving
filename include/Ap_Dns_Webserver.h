@@ -76,7 +76,7 @@ void setupServer() {
             brightness = constrain(brightness, 0, 255);
 
             currentBrightness = brightness;
-            ledcWrite(RST_CHANNEL, brightness);
+            ledcWrite(RST_PIN, brightness);
             Serial.printf("[WEB] Brightness set to %d\n", brightness);
 
             request->send(200, "text/plain", "OK");

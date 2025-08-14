@@ -112,11 +112,9 @@ You can configure the full project from __`include/Config.h`__ :
 #define PWM_FREQ     5000
 #define PWM_RES      8
 #define LED_PIN 12 
-#define LED_CHANNEL 0
 #define LED_DELAY 30
 
 #define RST_PIN 27 
-#define RST_CHANNEL 1
 
 #define MAX_BRIGHTNESS   255
 #define MIN_BRIGHTNESS   0
